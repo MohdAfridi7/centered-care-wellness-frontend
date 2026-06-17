@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+  import React, { useEffect } from "react";
 import img1 from "../../assets/12.png";
   import {
     CheckCircle,
@@ -17,6 +18,8 @@ import img1 from "../../assets/12.png";
   ShieldPlus,
   ClipboardList, Users, HeartHandshake,ArrowRight
 } from "lucide-react";
+import { updateSEO } from "../../utils/seo";
+import { getSeoMetaByPage } from "../../api/seoRoutes";
 
   export default function ChronicCareManagementConditions() {
      const navigate = useNavigate();

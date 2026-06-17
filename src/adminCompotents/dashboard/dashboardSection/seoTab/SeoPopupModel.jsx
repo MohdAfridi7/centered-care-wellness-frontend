@@ -29,6 +29,7 @@ const SeoPopupModel = ({ isOpen, onClose, section, onSuccess, onError }) => {
     "chronic-care-management-conditions",
     "transitional-care-management-requirements",
     "behavioral-health-care",
+    "who-we-serve",
   ];
 
   // ================= PREFILL =================

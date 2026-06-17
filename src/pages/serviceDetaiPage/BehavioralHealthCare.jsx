@@ -1,4 +1,4 @@
-import React from "react";
+  import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import img1 from "../../assets/12.png";
@@ -18,6 +18,8 @@ import {
   Sparkles,
   MessageCircle,
 } from "lucide-react";
+import { updateSEO } from "../../utils/seo";
+import { getSeoMetaByPage } from "../../api/seoRoutes";
 
 export default function BehavioralHealthCare() {
   const navigate = useNavigate();

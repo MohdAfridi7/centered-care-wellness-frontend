@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { CheckCircle } from "lucide-react";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
+import { updateSEO } from "../../utils/seo";
+import { getSeoMetaByPage } from "../../api/seoRoutes";
 
 export default function ServicesDetail() {
 const location = useLocation();

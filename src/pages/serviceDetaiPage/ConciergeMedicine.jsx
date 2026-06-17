@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
   import { useNavigate } from "react-router-dom";
+    import React, { useEffect } from "react";
 import {
   HeartPulse,
   Phone,
@@ -12,9 +13,35 @@ import {
   Link2,
   HeartHandshake,
 } from "lucide-react";
+import { updateSEO } from "../../utils/seo";
+import { getSeoMetaByPage } from "../../api/seoRoutes";
 
 export default function ConciergeMedicine() {
   const navigate = useNavigate();
+    useEffect(() => {
+  
+      const loadSeo = async () => {
+  
+        try {
+  
+          const res = await getSeoMetaByPage("concierge-medicine");
+  
+          if (res.success) {
+            updateSEO(res.data);
+          }
+  
+        } catch (error) {
+  
+          console.error("SEO Error:", error);
+  
+        }
+  
+      };
+  
+      loadSeo();
+  
+    }, []);
+    
   const data = [
     {
       icon: HeartPulse,

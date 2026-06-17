@@ -120,7 +120,7 @@ const SeoSections = () => {
               : "bg-blue-500 hover:bg-blue-600"
           }`}
           onClick={handleAdd}
-          disabled={seoList.length >= 10}
+          disabled={seoList.length >= 13}
         >
           Add Meta Tag
         </button>
