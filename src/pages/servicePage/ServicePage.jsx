@@ -1,31 +1,39 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from "react";
 
-import ServiceHero from '../../components/services/ServiceHero'
-import Commitment from '../../components/common/Commitment'
-import ServiceCards from '../../components/services/ServiceCards'
-import ContactFormSection from '../../components/contact/ContactForm'
-import WhoWeServe from '../../components/services/WhoWeServe'
+import ServiceHero from "../../components/services/ServiceHero";
+import Commitment from "../../components/common/Commitment";
+import ServiceCards from "../../components/services/ServiceCards";
+import ContactFormSection from "../../components/contact/ContactForm";
+import WhoWeServe from "../../components/services/WhoWeServe";
 
-import { updateSEO } from '../../utils/seo'
+import { updateSEO } from "../../utils/seo";
+import { getSeoMetaByPage } from "../../api/seoRoutes";
 
 const ServicePage = () => {
 
   useEffect(() => {
 
-    updateSEO({
+    const loadSeo = async () => {
 
-      title:
-        "Telehealth & Healthcare Services | Centered Care Wellness",
+      try {
 
-      description:
-        "Explore our telehealth services including chronic care management, behavioral health support, medication management coaching, remote patient monitoring, concierge medicine, and personalized virtual healthcare.",
+        const res = await getSeoMetaByPage("services");
 
-      keywords:
-        "telehealth services, chronic care management, remote patient monitoring, behavioral health, medication management, concierge medicine, online healthcare, virtual care"
+        if (res.success) {
+          updateSEO(res.data);
+        }
 
-    })
+      } catch (error) {
 
-  }, [])
+        console.error("SEO Error:", error);
+
+      }
+
+    };
+
+    loadSeo();
+
+  }, []);
 
   return (
     <>
@@ -35,7 +43,7 @@ const ServicePage = () => {
       <Commitment />
       <ContactFormSection />
     </>
-  )
-}
+  );
+};
 
-export default ServicePage
+export default ServicePage;

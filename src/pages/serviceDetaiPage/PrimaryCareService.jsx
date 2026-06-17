@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
   import { useNavigate } from "react-router-dom";
+  import React, { useEffect } from "react";
 import {
   Globe,
   MapPin,
@@ -18,8 +19,36 @@ import {
   ArrowRightCircle,
 } from "lucide-react";
 
+import { updateSEO } from "../../utils/seo";
+import { getSeoMetaByPage } from "../../api/seoRoutes";
+
 export default function PrimaryCareService() {
   const navigate = useNavigate();
+
+   useEffect(() => {
+
+    const loadSeo = async () => {
+
+      try {
+
+        const res = await getSeoMetaByPage("primary-care");
+
+        if (res.success) {
+          updateSEO(res.data);
+        }
+
+      } catch (error) {
+
+        console.error("SEO Error:", error);
+
+      }
+
+    };
+
+    loadSeo();
+
+  }, []);
+
 const data = [
   {
     icon: HeartPulse,

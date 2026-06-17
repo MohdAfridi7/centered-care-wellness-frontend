@@ -96,11 +96,11 @@ export default function ContactMap() {
               </div>
 
               <p className="font-semibold text-lg text-[#1f1b4b] break-all">
-                support@healthcare.com
+                contact@centeredcarewellness.org
               </p>
 
               <motion.button
-  onClick={() => window.location.href = "mailto:support@healthcare.com?subject=Support Request"}
+  onClick={() => window.location.href = "mailto:contact@centeredcarewellness.org?subject=Support Request"}
   whileHover={{ scale: 1.08 }}
   whileTap={{ scale: 0.95 }}
   className="mt-4 border border-yellow-400 px-6 py-2 rounded-full hover:bg-yellow-400 hover:text-black transition"

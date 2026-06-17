@@ -6,7 +6,7 @@ const servicesData = [
     description:
       "Our telehealth services provide you with the convenience of secure video consultations, allowing you to connect with our healthcare professionals for primary care, follow-ups, and urgent care needs from the comfort of your home.",
      links: [
-      { name: "Primary Care Services", path: "primary-care" },
+      { name: "Primary Care Services", path: "/primary-care" },
       { name: "How Do I Get TeleHealth?", path: "/who-we-serve" },
       { name: "Concierge Medicine Subscription Plans", path: "/concierge-medicine" },
     ],
@@ -42,7 +42,7 @@ const servicesData = [
     description:
       "Our advanced remote patient monitoring services allow us to monitor your vital signs and health data remotely, providing timely interventions and adjustments to your care plan. This service helps minimize hospital visits and keeps you safe in your own home.",
     links: [
-      { name: "How We Can Help You Stay Healthy", path: "/service" },
+      { name: "How We Can Help You Stay Healthy", path: "/service#remote-patient-monitoring" },
       { name: "How Do I Get Connected?", path: "/who-we-serve" },
     ],
   },
