@@ -92,7 +92,8 @@ const handleSubmit = async () => {
 
   return (
 
-    <div className="p-6 mx-5 rounded-xl shadow-md mt-6 bg-white border border-gray-200">
+ <>
+    {/* <div className="p-6 mx-5 rounded-xl shadow-md mt-6 bg-white border border-gray-200">
 
       <h3 className="text-xl font-semibold mb-4">
         robots.txt Editor
@@ -154,7 +155,8 @@ const handleSubmit = async () => {
 
       )}
 
-    </div>
+    </div> */}
+ </>
 
   );
 

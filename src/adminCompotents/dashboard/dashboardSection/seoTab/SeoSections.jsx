@@ -209,7 +209,7 @@ const SeoSections = () => {
                       <strong>Canonical:</strong> {item.canonical}
                     </p>
 
-                    <p>
+                    {/* <p>
                       <strong>OG Title:</strong> {item.ogTitle}
                     </p>
 
@@ -224,7 +224,7 @@ const SeoSections = () => {
                     <p>
                       <strong>Twitter Description:</strong>{" "}
                       {item.twitterDescription}
-                    </p>
+                    </p> */}
                   </div>
                 </motion.div>
               ))}

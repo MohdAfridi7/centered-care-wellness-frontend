@@ -228,7 +228,7 @@ const SeoPopupModel = ({ isOpen, onClose, section, onSuccess, onError }) => {
           </div>
 
           {/* OG TITLE */}
-          <div>
+          {/* <div>
             <label className="block mb-1 text-sm font-semibold">
               OG Title
             </label>
@@ -240,10 +240,10 @@ const SeoPopupModel = ({ isOpen, onClose, section, onSuccess, onError }) => {
               onChange={handleInputChange}
               className="w-full border rounded-md px-3 py-2"
             />
-          </div>
+          </div> */}
 
           {/* OG DESCRIPTION */}
-          <div>
+          {/* <div>
             <label className="block mb-1 text-sm font-semibold">
               OG Description
             </label>
@@ -255,10 +255,10 @@ const SeoPopupModel = ({ isOpen, onClose, section, onSuccess, onError }) => {
               rows="2"
               className="w-full border rounded-md px-3 py-2 resize-none"
             />
-          </div>
+          </div> */}
 
           {/* TWITTER TITLE */}
-          <div>
+          {/* <div>
             <label className="block mb-1 text-sm font-semibold">
               Twitter Title
             </label>
@@ -270,10 +270,10 @@ const SeoPopupModel = ({ isOpen, onClose, section, onSuccess, onError }) => {
               onChange={handleInputChange}
               className="w-full border rounded-md px-3 py-2"
             />
-          </div>
+          </div> */}
 
           {/* TWITTER DESCRIPTION */}
-          <div>
+          {/* <div>
             <label className="block mb-1 text-sm font-semibold">
               Twitter Description
             </label>
@@ -285,7 +285,7 @@ const SeoPopupModel = ({ isOpen, onClose, section, onSuccess, onError }) => {
               rows="2"
               className="w-full border rounded-md px-3 py-2 resize-none"
             />
-          </div>
+          </div> */}
 
           {/* BUTTONS */}
           <div className="flex justify-end gap-2 pt-4">
