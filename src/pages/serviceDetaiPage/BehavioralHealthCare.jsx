@@ -24,6 +24,30 @@ import { getSeoMetaByPage } from "../../api/seoRoutes";
 export default function BehavioralHealthCare() {
   const navigate = useNavigate();
 
+  useEffect(() => {
+    
+        const loadSeo = async () => {
+    
+          try {
+    
+            const res = await getSeoMetaByPage("behavioral-health-care");
+    
+            if (res.success) {
+              updateSEO(res.data);
+            }
+    
+          } catch (error) {
+    
+            console.error("SEO Error:", error);
+    
+          }
+    
+        };
+    
+        loadSeo();
+    
+      }, []);
+
   const services = [
     {
       icon: <Brain />,

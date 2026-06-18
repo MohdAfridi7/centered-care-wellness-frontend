@@ -23,6 +23,29 @@ import { getSeoMetaByPage } from "../../api/seoRoutes";
 
   export default function ChronicCareManagementConditions() {
      const navigate = useNavigate();
+     useEffect(() => {
+       
+           const loadSeo = async () => {
+       
+             try {
+       
+               const res = await getSeoMetaByPage("chronic-care-management-conditions");
+       
+               if (res.success) {
+                 updateSEO(res.data);
+               }
+       
+             } catch (error) {
+       
+               console.error("SEO Error:", error);
+       
+             }
+       
+           };
+       
+           loadSeo();
+       
+         }, []);
       const conditions = [
     { text: "Alzheimer’s disease and related dementia", icon: <Brain /> },
     { text: "Arthritis (osteoarthritis and rheumatoid)", icon: <Activity /> },
