@@ -18,7 +18,7 @@ const servicesData = [
     description:
       "Our chronic care management services include personalized care plans, regular follow-ups, and continuous support to ensure optimal health outcomes for our patients. For patients who are just being discharged from the hospital, our transitional care management services focuses on helping patients heal safely at home.",
       links: [
-      { name: "Learn: Chronic and Transitional Care Management", path: "/service#chronic-care-and-transitional-care-management" },
+      { name: "Learn: Chronic and Transitional Care Management", path: "/how-we-can-help#chronic-care-and-transitional-care-management" },
       { name: "How Do I Get Help?", path: "/who-we-serve" },
       { name: "Covered Conditions: Chronic Care Management", path: "/chronic-care-management-conditions" },
       { name: "How Do I Get Transitional Care Management?", path: "/transitional-care-management-requirements" },
@@ -31,7 +31,7 @@ const servicesData = [
     description:
       "Our medication management coaching program offers personalized coaching and education to help you understand your medications, manage side effects, and stay on track with your treatment plan.",
       links: [
-      { name: "How We Can Help You Stay on Track", path: "/service#medication-management" },
+      { name: "How We Can Help You Stay on Track", path: "/how-we-can-help#medication-management" },
       { name: "How Can I Get Help?", path: "/who-we-serve" },
     ],
   },
@@ -42,7 +42,7 @@ const servicesData = [
     description:
       "Our advanced remote patient monitoring services allow us to monitor your vital signs and health data remotely, providing timely interventions and adjustments to your care plan. This service helps minimize hospital visits and keeps you safe in your own home.",
     links: [
-      { name: "How We Can Help You Stay Healthy", path: "/service#remote-patient-monitoring" },
+      { name: "How We Can Help You Stay Healthy", path: "/how-we-can-help#remote-patient-monitoring" },
       { name: "How Do I Get Connected?", path: "/who-we-serve" },
     ],
   },

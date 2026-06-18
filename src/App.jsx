@@ -16,7 +16,7 @@ import Dashboard from "./adminCompotents/dashboard/Dashboard";
 import BlogPage from "./pages/blogPage/BlogPage";
 import BlogDetails from "./pages/blogPage/BlogDetails";
 import PartnersPage from "./pages/partnerPage/PartnersPage";
-import ServicesDetail from "./pages/serviceDetaiPage/ServicesDetail";
+import HowWeCanHelp from "./pages/serviceDetaiPage/HowWeCanHelp";
 import WhoWeServe from "./pages/serviceDetaiPage/WhoWeServe";
 import ConciergeMedicine from "./pages/serviceDetaiPage/ConciergeMedicine";
 import PrimaryCareService from "./pages/serviceDetaiPage/PrimaryCareService";
@@ -42,7 +42,7 @@ function App() {
         <Route path="/partners" element={<PartnersPage/>} />
 
         {/* service detail page routes----------- */}
-        <Route path="/service" element={<ServicesDetail/>} />
+        <Route path="/how-we-can-help" element={<HowWeCanHelp/>} />
         <Route path="/who-we-serve" element={<WhoWeServe/>} />
         <Route path="/concierge-medicine" element={<ConciergeMedicine/>} />
         <Route path="/primary-care" element={<PrimaryCareService/>} />

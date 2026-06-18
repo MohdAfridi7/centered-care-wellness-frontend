@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom";
 import { updateSEO } from "../../utils/seo";
 import { getSeoMetaByPage } from "../../api/seoRoutes";
 
-export default function ServicesDetail() {
+export default function HowWeCanHelp() {
 const location = useLocation();
    useEffect(() => {
 
@@ -13,7 +13,7 @@ const location = useLocation();
 
       try {
 
-        const res = await getSeoMetaByPage("service");
+        const res = await getSeoMetaByPage("how-we-can-help");
 
         if (res.success) {
           updateSEO(res.data);

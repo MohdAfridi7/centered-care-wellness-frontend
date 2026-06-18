@@ -16,7 +16,7 @@ const services = [
     icon: <MonitorSmartphone size={42} />,
     title: "Telehealth Services",
     desc: "Secure and convenient virtual healthcare visits from the comfort of your home.",
-    link: "/service#telehealth-services",
+    link: "/how-we-can-help#telehealth-services",
   },
   {
     icon: <HeartPulse size={42} />,
@@ -52,13 +52,13 @@ const services = [
     icon: <Radio size={42} />,
     title: "Remote Patient Monitoring",
     desc: "Ongoing health tracking and monitoring to support proactive care management.",
-    link: "/service#remote-patient-monitoring",
+    link: "/how-we-can-help#remote-patient-monitoring",
   },
   {
     icon: <Pill size={42} />,
     title: "Medication Management & Coaching",
     desc: "Guidance and support to help patients manage medications safely and effectively.",
-    link: "/service#medication-management",
+    link: "/how-we-can-help#medication-management",
   },
 ];
 

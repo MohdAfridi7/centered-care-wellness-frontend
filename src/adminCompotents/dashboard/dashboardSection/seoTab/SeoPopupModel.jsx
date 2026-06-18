@@ -43,7 +43,7 @@ const SeoPopupModel = ({ isOpen, onClose, section, onSuccess, onError }) => {
     label: "Who We Serve",
   },
     {
-    value: "service",
+    value: "how-we-can-help",
     label: "How We Can Help ",
   },
 ];
