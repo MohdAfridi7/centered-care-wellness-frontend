@@ -17,20 +17,36 @@ const SeoPopupModel = ({ isOpen, onClose, section, onSuccess, onError }) => {
 
   const [isLoading, setIsLoading] = useState(false);
 
-  const pageOptions = [
-    "home",
-    "about",
-    "service",
-    "blogs",
-    "contact",
-    "partners",
-    "concierge-medicine",
-    "primary-care",
-    "chronic-care-management-conditions",
-    "transitional-care-management-requirements",
-    "behavioral-health-care",
-    "who-we-serve",
-  ];
+ const pageOptions = [
+  { value: "home", label: "Home" },
+  { value: "about", label: "About Us" },
+  { value: "services", label: "Services" },
+  { value: "blogs", label: "Blogs" },
+  { value: "contact", label: "Contact Us" },
+  { value: "partners", label: "Partners" },
+  { value: "concierge-medicine", label: "Concierge Medicine" },
+  { value: "primary-care", label: "Primary Care" },
+  {
+    value: "chronic-care-management-conditions",
+    label: "Chronic Care Management Conditions",
+  },
+  {
+    value: "transitional-care-management-requirements",
+    label: "Transitional Care Management Requirements",
+  },
+  {
+    value: "behavioral-health-care",
+    label: "Behavioral Health Care",
+  },
+  {
+    value: "who-we-serve",
+    label: "Who We Serve",
+  },
+    {
+    value: "service",
+    label: "How We Can Help ",
+  },
+];
 
   // ================= PREFILL =================
 
@@ -147,23 +163,22 @@ const SeoPopupModel = ({ isOpen, onClose, section, onSuccess, onError }) => {
               Page Name
             </label>
 
-            <select
-              name="page"
-              value={formData.page}
-              onChange={handleInputChange}
-              className="w-full rounded-md border px-3 py-2"
-              disabled={section}
-              required
-            >
-              <option value="">Select Page</option>
+        <select
+  name="page"
+  value={formData.page}
+  onChange={handleInputChange}
+  className="w-full rounded-md border px-3 py-2"
+  disabled={section}
+  required
+>
+  <option value="">Select Page</option>
 
-              {pageOptions.map((option) => (
-                <option key={option} value={option}>
-                  {option}
-                </option>
-              ))}
-
-            </select>
+  {pageOptions.map((option) => (
+    <option key={option.value} value={option.value}>
+      {option.label}
+    </option>
+  ))}
+</select>
           </div>
 
           {/* TITLE */}

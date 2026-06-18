@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import img1 from "../../assets/12.png";
@@ -11,9 +11,34 @@ import {
   Activity,
   ShieldCheck, Users
 } from "lucide-react";
+import { updateSEO } from "../../utils/seo";
+import { getSeoMetaByPage } from "../../api/seoRoutes";
 
 export default function TransitionalCareManagementRequirements() {
 const navigate = useNavigate();
+   useEffect(() => {
+
+    const loadSeo = async () => {
+
+      try {
+
+        const res = await getSeoMetaByPage("transitional-care-management-requirements");
+
+        if (res.success) {
+          updateSEO(res.data);
+        }
+
+      } catch (error) {
+
+        console.error("SEO Error:", error);
+
+      }
+
+    };
+
+    loadSeo();
+
+  }, []);
  const features = [
     {
       text: "Support a patient’s transition back to a community setting",

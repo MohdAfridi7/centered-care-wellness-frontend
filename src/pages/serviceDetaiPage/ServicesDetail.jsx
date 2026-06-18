@@ -7,6 +7,29 @@ import { getSeoMetaByPage } from "../../api/seoRoutes";
 
 export default function ServicesDetail() {
 const location = useLocation();
+   useEffect(() => {
+
+    const loadSeo = async () => {
+
+      try {
+
+        const res = await getSeoMetaByPage("service");
+
+        if (res.success) {
+          updateSEO(res.data);
+        }
+
+      } catch (error) {
+
+        console.error("SEO Error:", error);
+
+      }
+
+    };
+
+    loadSeo();
+
+  }, []);
 
 useEffect(() => {
   if (location.hash) {

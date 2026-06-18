@@ -1,10 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
   import img1 from "../../assets/who-we-are.jpeg";
   import { motion } from "framer-motion";
   import { useNavigate } from "react-router-dom";
+  import { updateSEO } from "../../utils/seo";
+import { getSeoMetaByPage } from "../../api/seoRoutes";
 
   export default function WhoWeServe() {
     const navigate = useNavigate();
+       useEffect(() => {
+    
+        const loadSeo = async () => {
+    
+          try {
+    
+            const res = await getSeoMetaByPage("who-we-serve");
+    
+            if (res.success) {
+              updateSEO(res.data);
+            }
+    
+          } catch (error) {
+    
+            console.error("SEO Error:", error);
+    
+          }
+    
+        };
+    
+        loadSeo();
+    
+      }, []);
 
       const data = [
       {
