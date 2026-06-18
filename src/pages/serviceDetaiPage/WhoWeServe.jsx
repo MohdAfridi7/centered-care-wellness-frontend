@@ -78,7 +78,7 @@ import { getSeoMetaByPage } from "../../api/seoRoutes";
     ];
     return (
 
-     <div className="overflow-x-hidden">
+     <div>
             <section className="bg-gradient-to-r from-[#eef2ff] via-white to-[#f8fafc] py-16 md:py-24 px-4 sm:px-6 md:px-10 lg:px-16 ">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
 
@@ -141,7 +141,7 @@ import { getSeoMetaByPage } from "../../api/seoRoutes";
         </div>
       </section>
 
-    <section className="bg-[#2b2350] py-20 px-6 md:px-16">
+    <section className="overflow-hidden bg-[#2b2350] py-20 px-6 md:px-16">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
 
           {/* 🔥 LEFT IMAGE (ANIMATION LEFT → RIGHT) */}
@@ -254,7 +254,7 @@ import { getSeoMetaByPage } from "../../api/seoRoutes";
       </section>
 
 
-  <section className="bg-[#f4f5fb] py-20 px-6 md:px-16">
+  <section className=" bg-[#f4f5fb] py-20 px-6 md:px-16">
     <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-start">
 
       {/* 🔥 LEFT CARDS */}
@@ -336,7 +336,7 @@ import { getSeoMetaByPage } from "../../api/seoRoutes";
   </section>
 
 
-    <section className="bg-[#2b2350] overflow-hidden py-16 px-6 md:px-16">
+    <section className=" bg-[#2b2350] overflow-hidden py-16 px-6 md:px-16">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-10 items-center">
 
           {/* 🔥 LEFT IMAGE (LEFT → RIGHT ANIMATION) */}
@@ -397,7 +397,7 @@ import { getSeoMetaByPage } from "../../api/seoRoutes";
       </section>
 
 
-        <section className="bg-[#f4f6fb] py-20 px-6 md:px-16">
+        <section className="overflow-hidden bg-[#f4f6fb] py-20 px-6 md:px-16">
         <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
 
           {/* 🔥 LEFT CONTENT */}
