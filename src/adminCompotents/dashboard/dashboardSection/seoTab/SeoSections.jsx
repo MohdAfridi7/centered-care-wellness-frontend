@@ -115,7 +115,7 @@ const SeoSections = () => {
       <div className="flex justify-end items-center p-4">
         <button
           className={`text-white text-sm rounded h-8 px-4 ${
-            seoList.length >= 10
+            seoList.length >= 13
               ? "bg-gray-400 cursor-not-allowed"
               : "bg-blue-500 hover:bg-blue-600"
           }`}
